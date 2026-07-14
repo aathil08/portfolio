@@ -1,0 +1,1136 @@
+[
+  {
+    "id": "TC001",
+    "title": "Loader gives way to the portfolio content",
+    "description": "A visitor can wait for the splash screen to finish and then see the portfolio content appear.",
+    "category": "Loader / Splash Screen",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /"
+      },
+      {
+        "type": "action",
+        "description": "Wait for the loader animation to complete"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the portfolio content is visible"
+      }
+    ],
+    "priority": "High"
+  },
+  {
+    "id": "TC002",
+    "title": "Load the portfolio and view the hero section",
+    "description": "This verifies that a visitor can land on the portfolio, wait for the initial reveal, and see the hero content that introduces Mohamed Aathil.",
+    "category": "Hero Section",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /"
+      },
+      {
+        "type": "action",
+        "description": "Wait for the initial page reveal to complete"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the hero introduction is displayed"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the primary call to action links are visible"
+      }
+    ],
+    "priority": "High"
+  },
+  {
+    "id": "TC003",
+    "title": "Send a message from the contact form",
+    "description": "This verifies that a visitor can complete the contact form and receive feedback after submission.",
+    "category": "Contact Form",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /"
+      },
+      {
+        "type": "action",
+        "description": "Scroll to the Contact section"
+      },
+      {
+        "type": "action",
+        "description": "Fill in the name field with Mohamed Aathil"
+      },
+      {
+        "type": "action",
+        "description": "Fill in the email field with mohamed@example.com"
+      },
+      {
+        "type": "action",
+        "description": "Fill in the subject field with Portfolio inquiry"
+      },
+      {
+        "type": "action",
+        "description": "Fill in the message field with Hello, I would like to get in touch about an opportunity."
+      },
+      {
+        "type": "action",
+        "description": "Submit the contact form"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify a submission feedback toast is visible"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the contact form remains visible"
+      }
+    ],
+    "priority": "High"
+  },
+  {
+    "id": "TC004",
+    "title": "Navbar links move to the main sections",
+    "description": "A visitor can use the sticky navbar to jump to key sections and see the active section state update.",
+    "category": "Navbar Navigation",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /"
+      },
+      {
+        "type": "action",
+        "description": "Click the navbar link for the About section"
+      },
+      {
+        "type": "action",
+        "description": "Click the navbar link for the Projects section"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the page has scrolled to the Projects section"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the corresponding navbar item is marked as active"
+      }
+    ],
+    "priority": "High"
+  },
+  {
+    "id": "TC005",
+    "title": "Use the hero CTA to jump to projects",
+    "description": "This verifies that a visitor can use the hero navigation to jump directly from the landing section to the projects section.",
+    "category": "Hero Section",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /"
+      },
+      {
+        "type": "action",
+        "description": "Click the primary action that shows the work section"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the projects section is displayed"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify project cards are visible"
+      }
+    ],
+    "priority": "High"
+  },
+  {
+    "id": "TC006",
+    "title": "Use the hero CTA to jump to contact",
+    "description": "This verifies that a visitor can move from the hero section to the contact section using the main contact call to action.",
+    "category": "Hero Section",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /"
+      },
+      {
+        "type": "action",
+        "description": "Click the primary action that shows the contact section"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the contact section is displayed"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the contact form is visible"
+      }
+    ],
+    "priority": "High"
+  },
+  {
+    "id": "TC007",
+    "title": "Navbar logo returns to the hero section",
+    "description": "A visitor can click the navbar logo and return to the top hero section.",
+    "category": "Navbar Navigation",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /"
+      },
+      {
+        "type": "action",
+        "description": "Click the navbar logo"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the hero section is visible"
+      }
+    ],
+    "priority": "High"
+  },
+  {
+    "id": "TC008",
+    "title": "Reach the projects section from the sticky navigation",
+    "description": "This verifies that a visitor can use the sticky navigation to jump to the projects section while browsing the page.",
+    "category": "Hero Section",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /"
+      },
+      {
+        "type": "action",
+        "description": "Click the navigation link for the projects section"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the projects section is displayed"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the projects content is visible"
+      }
+    ],
+    "priority": "High"
+  },
+  {
+    "id": "TC009",
+    "title": "Reach the contact section from the sticky navigation",
+    "description": "This verifies that a visitor can use the sticky navigation to jump to the contact section while browsing the page.",
+    "category": "Hero Section",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /"
+      },
+      {
+        "type": "action",
+        "description": "Click the navigation link for the contact section"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the contact section is displayed"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the contact form is visible"
+      }
+    ],
+    "priority": "High"
+  },
+  {
+    "id": "TC010",
+    "title": "Contact form shows an error state on submit",
+    "description": "A visitor can complete the contact form and see an error toast when submission does not complete successfully in the current app state.",
+    "category": "Navbar Navigation",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /"
+      },
+      {
+        "type": "action",
+        "description": "Scroll to the Contact section"
+      },
+      {
+        "type": "action",
+        "description": "Fill in the name field with Mohamed Aathil"
+      },
+      {
+        "type": "action",
+        "description": "Fill in the email field with test@example.com"
+      },
+      {
+        "type": "action",
+        "description": "Fill in the message field with a short inquiry"
+      },
+      {
+        "type": "action",
+        "description": "Submit the contact form"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify an error toast is visible"
+      }
+    ],
+    "priority": "High"
+  },
+  {
+    "id": "TC011",
+    "title": "Theme changes across the portfolio",
+    "description": "A visitor can switch the site theme and see the portfolio update to the alternate appearance.",
+    "category": "Theme Toggle (Dark/Light Mode)",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /"
+      },
+      {
+        "type": "action",
+        "description": "Click the theme toggle button in the navbar"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the page appearance changes to the alternate theme"
+      }
+    ],
+    "priority": "High"
+  },
+  {
+    "id": "TC012",
+    "title": "Projects can be filtered and opened externally",
+    "description": "A visitor can filter projects, inspect a project card, and open its external source link.",
+    "category": "Navbar Navigation",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /"
+      },
+      {
+        "type": "action",
+        "description": "Scroll to the Projects section"
+      },
+      {
+        "type": "action",
+        "description": "Select a project category filter"
+      },
+      {
+        "type": "action",
+        "description": "Click a project card action that opens the source repository"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the external project link opens"
+      }
+    ],
+    "priority": "High"
+  },
+  {
+    "id": "TC013",
+    "title": "View all projects from the full list",
+    "description": "A visitor can open the projects section and switch to the full list so all projects are shown.",
+    "category": "Projects Section",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /"
+      },
+      {
+        "type": "action",
+        "description": "Scroll to the Projects section"
+      },
+      {
+        "type": "action",
+        "description": "Click the filter for all projects"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify all projects are displayed"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the project grid is visible"
+      }
+    ],
+    "priority": "High"
+  },
+  {
+    "id": "TC014",
+    "title": "Theme choice can be switched back",
+    "description": "A visitor can toggle the theme twice and return the site to its original appearance.",
+    "category": "Theme Toggle (Dark/Light Mode)",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /"
+      },
+      {
+        "type": "action",
+        "description": "Click the theme toggle button in the navbar"
+      },
+      {
+        "type": "action",
+        "description": "Click the theme toggle button in the navbar again"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the page appearance returns to the original theme"
+      }
+    ],
+    "priority": "High"
+  },
+  {
+    "id": "TC015",
+    "title": "Open social profile links from the hero",
+    "description": "This verifies that a visitor can open the public social profile links from the hero section and reach the intended external destinations.",
+    "category": "Hero Section",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /"
+      },
+      {
+        "type": "action",
+        "description": "Click the GitHub social link"
+      },
+      {
+        "type": "action",
+        "description": "Click the LinkedIn social link"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the external profile pages open in new tabs"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the hero social links remain available"
+      }
+    ],
+    "priority": "High"
+  },
+  {
+    "id": "TC016",
+    "title": "Block contact submission when a required field is missing",
+    "description": "This verifies that the contact form prevents submission when a required field is left empty.",
+    "category": "Contact Form",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /"
+      },
+      {
+        "type": "action",
+        "description": "Scroll to the Contact section"
+      },
+      {
+        "type": "action",
+        "description": "Fill in the name field with Mohamed Aathil"
+      },
+      {
+        "type": "action",
+        "description": "Fill in the email field with mohamed@example.com"
+      },
+      {
+        "type": "action",
+        "description": "Fill in the subject field with Portfolio inquiry"
+      },
+      {
+        "type": "action",
+        "description": "Leave the message field empty"
+      },
+      {
+        "type": "action",
+        "description": "Submit the contact form"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify a required field validation error is visible"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the form is not submitted"
+      }
+    ],
+    "priority": "High"
+  },
+  {
+    "id": "TC017",
+    "title": "Open a project repository",
+    "description": "A visitor can use a project card to open the repository in a new tab through the external GitHub link.",
+    "category": "Projects Section",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /"
+      },
+      {
+        "type": "action",
+        "description": "Scroll to the Projects section"
+      },
+      {
+        "type": "action",
+        "description": "Click the GitHub link on a project card"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the project repository opens in a new tab"
+      }
+    ],
+    "priority": "High"
+  },
+  {
+    "id": "TC018",
+    "title": "Contact form validates required fields",
+    "description": "A visitor sees validation feedback when trying to submit the contact form without completing the required inputs.",
+    "category": "Navbar Navigation",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /"
+      },
+      {
+        "type": "action",
+        "description": "Scroll to the Contact section"
+      },
+      {
+        "type": "action",
+        "description": "Submit the contact form without filling required fields"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify required-field validation messages are visible"
+      }
+    ],
+    "priority": "High"
+  },
+  {
+    "id": "TC019",
+    "title": "Filter projects by category",
+    "description": "A visitor can filter the projects grid to see only projects from a selected category.",
+    "category": "Projects Section",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /"
+      },
+      {
+        "type": "action",
+        "description": "Scroll to the Projects section"
+      },
+      {
+        "type": "action",
+        "description": "Click a project category filter"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify only projects from the selected category are displayed"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the filtered project grid is visible"
+      }
+    ],
+    "priority": "High"
+  },
+  {
+    "id": "TC020",
+    "title": "Download the resume from the hero section",
+    "description": "This verifies that a visitor can start the resume download from the landing section.",
+    "category": "Hero Section",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /"
+      },
+      {
+        "type": "action",
+        "description": "Click the resume download link"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify a resume download is initiated"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the resume access control remains available in the hero section"
+      }
+    ],
+    "priority": "High"
+  },
+  {
+    "id": "TC021",
+    "title": "About and skills content can be explored",
+    "description": "A visitor can scroll through the profile area and switch skill categories to review the displayed skills content.",
+    "category": "Loader / Splash Screen",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /"
+      },
+      {
+        "type": "action",
+        "description": "Scroll to the About section"
+      },
+      {
+        "type": "action",
+        "description": "Scroll to the Skills section"
+      },
+      {
+        "type": "action",
+        "description": "Select a different skill category"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the selected skill category content is displayed"
+      }
+    ],
+    "priority": "High"
+  },
+  {
+    "id": "TC022",
+    "title": "Open GitHub side link",
+    "description": "This verifies that the GitHub side link opens the profile in a new tab when clicked.",
+    "category": "Side Links",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /"
+      },
+      {
+        "type": "action",
+        "description": "Click the GitHub side link"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the GitHub profile opens in a new tab"
+      }
+    ],
+    "priority": "High"
+  },
+  {
+    "id": "TC023",
+    "title": "Open a live project from the card",
+    "description": "A visitor can launch an available live project from its card and reach the external site in a new tab.",
+    "category": "Projects Section",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /"
+      },
+      {
+        "type": "action",
+        "description": "Scroll to the Projects section"
+      },
+      {
+        "type": "action",
+        "description": "Click the View Live link on a project with a live URL"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the live project opens in a new tab"
+      }
+    ],
+    "priority": "High"
+  },
+  {
+    "id": "TC024",
+    "title": "Open LinkedIn side link",
+    "description": "This verifies that the LinkedIn side link opens the profile in a new tab when clicked.",
+    "category": "Side Links",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /"
+      },
+      {
+        "type": "action",
+        "description": "Click the LinkedIn side link"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the LinkedIn profile opens in a new tab"
+      }
+    ],
+    "priority": "High"
+  },
+  {
+    "id": "TC025",
+    "title": "Resume and external profile links are accessible",
+    "description": "A visitor can use the hero links to open the resume or a social profile from the portfolio.",
+    "category": "Loader / Splash Screen",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /"
+      },
+      {
+        "type": "action",
+        "description": "Click the resume link in the hero section"
+      },
+      {
+        "type": "action",
+        "description": "Click one of the hero social links"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify an external destination is opened for the selected link"
+      }
+    ],
+    "priority": "High"
+  },
+  {
+    "id": "TC026",
+    "title": "Filter skills by category",
+    "description": "This verifies that a visitor can switch skill categories and see the displayed skills update to match the selected discipline.",
+    "category": "Skills Section",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /"
+      },
+      {
+        "type": "action",
+        "description": "Scroll to the skills section"
+      },
+      {
+        "type": "action",
+        "description": "Click a skill category tab"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the displayed skills update for the selected category"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the category selection remains active"
+      }
+    ],
+    "priority": "High"
+  },
+  {
+    "id": "TC027",
+    "title": "Open email side link",
+    "description": "This verifies that the email side link opens the user’s mail client when clicked.",
+    "category": "Side Links",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /"
+      },
+      {
+        "type": "action",
+        "description": "Click the email side link"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the mail client opens"
+      }
+    ],
+    "priority": "High"
+  },
+  {
+    "id": "TC028",
+    "title": "Inspect a project card",
+    "description": "A visitor can open the projects section and review a project card’s title, description, and technology badges.",
+    "category": "Projects Section",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /"
+      },
+      {
+        "type": "action",
+        "description": "Scroll to the Projects section"
+      },
+      {
+        "type": "action",
+        "description": "Open a project card"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the project details are visible"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the technology badges are visible"
+      }
+    ],
+    "priority": "Medium"
+  },
+  {
+    "id": "TC029",
+    "title": "View the about section profile summary and stats",
+    "description": "This verifies that a visitor can scroll to the about section and review Mohamed Aathil’s profile summary and achievement counters.",
+    "category": "About Section",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /"
+      },
+      {
+        "type": "action",
+        "description": "Scroll to the about section"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the profile bio content is displayed"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the achievement counters are displayed"
+      }
+    ],
+    "priority": "Medium"
+  },
+  {
+    "id": "TC030",
+    "title": "Mobile menu opens and closes while navigating",
+    "description": "A mobile visitor can open the hamburger menu, choose a section, and reach the target section from the drawer.",
+    "category": "Navbar Navigation",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /"
+      },
+      {
+        "type": "action",
+        "description": "Click the hamburger menu button"
+      },
+      {
+        "type": "action",
+        "description": "Click the navbar link for the Contact section"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the navigation drawer is closed"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the Contact section is visible"
+      }
+    ],
+    "priority": "Medium"
+  },
+  {
+    "id": "TC031",
+    "title": "Browse the experience timeline",
+    "description": "A visitor can scroll to the experience section and review the role, company, duration, description, and technologies used.",
+    "category": "Experience Section",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /"
+      },
+      {
+        "type": "action",
+        "description": "Scroll to the Experience section"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the experience timeline is displayed"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the role and tech stack details are visible"
+      }
+    ],
+    "priority": "Medium"
+  },
+  {
+    "id": "TC032",
+    "title": "View certifications as the section scrolls into view",
+    "description": "This verifies that scrolling to the certifications area reveals the certification cards with their details.",
+    "category": "Certifications Section",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /"
+      },
+      {
+        "type": "action",
+        "description": "Scroll to the Certifications section"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify certification cards are displayed"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify each certification card shows its issuer and date"
+      }
+    ],
+    "priority": "Medium"
+  },
+  {
+    "id": "TC033",
+    "title": "Scroll progress reflects page position",
+    "description": "This verifies that the page’s scroll progress indicator updates as the visitor moves through the portfolio.",
+    "category": "Scroll Progress Bar",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /"
+      },
+      {
+        "type": "action",
+        "description": "Scroll down the page"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the scroll progress indicator is visible"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the scroll progress indicator reflects page position"
+      }
+    ],
+    "priority": "Medium"
+  },
+  {
+    "id": "TC034",
+    "title": "Switch between multiple skill categories",
+    "description": "This verifies that a visitor can browse more than one skill category and see each selection change the visible skill set.",
+    "category": "Skills Section",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /"
+      },
+      {
+        "type": "action",
+        "description": "Scroll to the skills section"
+      },
+      {
+        "type": "action",
+        "description": "Click one skill category tab"
+      },
+      {
+        "type": "action",
+        "description": "Click a different skill category tab"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the visible skills change to match the second category"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify only one category is selected at a time"
+      }
+    ],
+    "priority": "Medium"
+  },
+  {
+    "id": "TC035",
+    "title": "Review the education timeline",
+    "description": "A visitor can scroll to the education section and view the degree, institution, period, grade, and coursework details.",
+    "category": "Education Section",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /"
+      },
+      {
+        "type": "action",
+        "description": "Scroll to the Education section"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the education timeline is displayed"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the degree and academic details are visible"
+      }
+    ],
+    "priority": "Medium"
+  },
+  {
+    "id": "TC036",
+    "title": "View footer and return to top",
+    "description": "This verifies that the footer appears at the bottom of the portfolio and the back-to-top control returns the page to the top.",
+    "category": "Footer",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /"
+      },
+      {
+        "type": "action",
+        "description": "Scroll to the bottom of the page"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the footer is visible"
+      },
+      {
+        "type": "action",
+        "description": "Click the back to top control"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the page scrolls to the top"
+      }
+    ],
+    "priority": "Medium"
+  },
+  {
+    "id": "TC037",
+    "title": "View the resume preview",
+    "description": "This verifies that the resume section renders the embedded preview when a visitor scrolls to it.",
+    "category": "Resume Section",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /"
+      },
+      {
+        "type": "action",
+        "description": "Scroll to the Resume section"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the resume preview is displayed"
+      }
+    ],
+    "priority": "Medium"
+  },
+  {
+    "id": "TC038",
+    "title": "Open social profile links from the contact section",
+    "description": "This verifies that the social icons in the contact section open the expected external profiles in a new tab.",
+    "category": "Contact Form",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /"
+      },
+      {
+        "type": "action",
+        "description": "Scroll to the Contact section"
+      },
+      {
+        "type": "action",
+        "description": "Click the GitHub social link"
+      },
+      {
+        "type": "action",
+        "description": "Click the LinkedIn social link"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify each social profile opens in a new tab"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the contact section remains visible"
+      }
+    ],
+    "priority": "Medium"
+  },
+  {
+    "id": "TC039",
+    "title": "Download the resume from the portfolio",
+    "description": "This verifies that a visitor can trigger the resume download from the resume section.",
+    "category": "Resume Section",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /"
+      },
+      {
+        "type": "action",
+        "description": "Scroll to the Resume section"
+      },
+      {
+        "type": "action",
+        "description": "Click the resume download button"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the resume download is initiated"
+      }
+    ],
+    "priority": "Low"
+  },
+  {
+    "id": "TC040",
+    "title": "Open the email contact channel",
+    "description": "This verifies that the contact section provides a working email link for direct outreach.",
+    "category": "Contact Form",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /"
+      },
+      {
+        "type": "action",
+        "description": "Scroll to the Contact section"
+      },
+      {
+        "type": "action",
+        "description": "Click the email contact link"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the mail client is opened"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the contact section remains visible"
+      }
+    ],
+    "priority": "Low"
+  },
+  {
+    "id": "TC041",
+    "title": "Project live links are disabled when unavailable",
+    "description": "A visitor can see that a project without a live site does not offer an enabled live-view action.",
+    "category": "Navbar Navigation",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /"
+      },
+      {
+        "type": "action",
+        "description": "Scroll to the Projects section"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify at least one project card shows a disabled live-view action"
+      }
+    ],
+    "priority": "Low"
+  },
+  {
+    "id": "TC042",
+    "title": "Open a certification verification link",
+    "description": "This verifies that a certification card can launch its verification link in a new tab.",
+    "category": "Certifications Section",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /"
+      },
+      {
+        "type": "action",
+        "description": "Scroll to the Certifications section"
+      },
+      {
+        "type": "action",
+        "description": "Click a certification verification link"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the verification link opens in a new tab"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the certification card remains visible on the page"
+      }
+    ],
+    "priority": "Low"
+  }
+]
