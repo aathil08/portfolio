@@ -106,10 +106,10 @@ export default function Contact() {
        *   PUBLIC_KEY  — from emailjs.com > Account > Public Key
        */
       await emailjs.sendForm(
-        'YOUR_SERVICE_ID',
-        'YOUR_TEMPLATE_ID',
+        'service_pyiy1he',
+        'template_c1qi1x3',
         formRef.current,
-        'YOUR_PUBLIC_KEY'
+        '8YFsDoxiWKQs6NhhU'
       );
       setStatus('success');
       setForm({ name: '', email: '', subject: '', message: '' });
