@@ -16,7 +16,7 @@ import {
 
 /* ── Animated stat counter ───────────────────────────────── */
 function StatCard({ value, suffix, label, delay }) {
-  const ref    = useRef(null);
+  const ref = useRef(null);
   const inView = useInView(ref, { once: true, margin: '-60px' });
 
   return (
@@ -103,17 +103,7 @@ export default function About() {
               </div>
             </div>
 
-            {/* Download resume */}
-            <Button
-              variant="primary"
-              size="md"
-              href={personalInfo.resumeUrl}
-              target="_blank"
-              className="self-start"
-            >
-              <FaDownload size={13} />
-              Download Resume
-            </Button>
+
           </motion.div>
 
           {/* ── Right: Quick facts + availability ── */}

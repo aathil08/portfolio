@@ -14,7 +14,7 @@ import Button from '../ui/Button';
 /* ── Canvas Particle Background ────────────────────────────── */
 function ParticleCanvas({ isDark }) {
   const canvasRef = useRef(null);
-  const rafRef    = useRef(null);
+  const rafRef = useRef(null);
 
   useEffect(() => {
     const canvas = canvasRef.current;
@@ -23,7 +23,7 @@ function ParticleCanvas({ isDark }) {
     let particles = [];
 
     const resize = () => {
-      canvas.width  = canvas.offsetWidth;
+      canvas.width = canvas.offsetWidth;
       canvas.height = canvas.offsetHeight;
     };
     resize();
@@ -33,12 +33,12 @@ function ParticleCanvas({ isDark }) {
     const count = Math.min(Math.floor((canvas.width * canvas.height) / 15000), 80);
     for (let i = 0; i < count; i++) {
       particles.push({
-        x:   Math.random() * canvas.width,
-        y:   Math.random() * canvas.height,
-        vx:  (Math.random() - 0.5) * 0.35,
-        vy:  (Math.random() - 0.5) * 0.35,
-        r:   Math.random() * 1.5 + 0.5,
-        o:   Math.random() * 0.35 + 0.08,
+        x: Math.random() * canvas.width,
+        y: Math.random() * canvas.height,
+        vx: (Math.random() - 0.5) * 0.35,
+        vy: (Math.random() - 0.5) * 0.35,
+        r: Math.random() * 1.5 + 0.5,
+        o: Math.random() * 0.35 + 0.08,
       });
     }
 
@@ -49,7 +49,7 @@ function ParticleCanvas({ isDark }) {
       particles.forEach((p, i) => {
         p.x += p.vx;
         p.y += p.vy;
-        if (p.x < 0 || p.x > canvas.width)  p.vx *= -1;
+        if (p.x < 0 || p.x > canvas.width) p.vx *= -1;
         if (p.y < 0 || p.y > canvas.height) p.vy *= -1;
 
         // Dot
@@ -60,15 +60,15 @@ function ParticleCanvas({ isDark }) {
 
         // Lines to nearby particles
         for (let j = i + 1; j < particles.length; j++) {
-          const p2  = particles[j];
-          const dx  = p.x - p2.x, dy = p.y - p2.y;
-          const d   = Math.sqrt(dx * dx + dy * dy);
+          const p2 = particles[j];
+          const dx = p.x - p2.x, dy = p.y - p2.y;
+          const d = Math.sqrt(dx * dx + dy * dy);
           if (d < 130) {
             ctx.beginPath();
             ctx.moveTo(p.x, p.y);
             ctx.lineTo(p2.x, p2.y);
             ctx.strokeStyle = `rgba(${color},${0.12 * (1 - d / 130)})`;
-            ctx.lineWidth   = 0.5;
+            ctx.lineWidth = 0.5;
             ctx.stroke();
           }
         }
@@ -128,9 +128,9 @@ function ProfileAvatar() {
 
       {/* Floating tech badges */}
       {[
-        { label: 'Java',    pos: '-top-2 -left-6',    delay: 1.8 },
-        { label: 'React',   pos: '-top-2 -right-6',   delay: 2.0 },
-        { label: 'Django',  pos: '-bottom-2 -left-2', delay: 2.2 },
+        { label: 'Java', pos: '-top-2 -left-6', delay: 1.8 },
+        { label: 'React', pos: '-top-2 -right-6', delay: 2.0 },
+        { label: 'Django', pos: '-bottom-2 -left-2', delay: 2.2 },
         { label: 'Node.js', pos: '-bottom-2 right-0', delay: 2.4 },
       ].map(({ label, pos, delay }) => (
         <motion.div
@@ -140,8 +140,8 @@ function ProfileAvatar() {
           animate={{ opacity: 1, scale: 1, y: [0, -4, 0] }}
           transition={{
             opacity: { delay, duration: 0.4 },
-            scale:   { delay, duration: 0.4 },
-            y:       { delay: delay + 0.4, duration: 3, repeat: Infinity, ease: 'easeInOut' },
+            scale: { delay, duration: 0.4 },
+            y: { delay: delay + 0.4, duration: 3, repeat: Infinity, ease: 'easeInOut' },
           }}
         >
           {label}
@@ -259,16 +259,6 @@ export default function Hero() {
               >
                 View My Work
               </Button>
-              <Button
-                variant="secondary"
-                size="lg"
-                href={personalInfo.resumeUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <FaDownload size={14} />
-                Resume
-              </Button>
             </motion.div>
 
             {/* Social links */}
@@ -279,7 +269,7 @@ export default function Hero() {
               transition={{ delay: 2.15 }}
             >
               {[
-                { icon: FaGithub,   href: personalInfo.github,  label: 'GitHub'   },
+                { icon: FaGithub, href: personalInfo.github, label: 'GitHub' },
                 { icon: FaLinkedin, href: personalInfo.linkedin, label: 'LinkedIn' },
               ].map(({ icon: Icon, href, label }) => (
                 <motion.a
